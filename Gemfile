@@ -3,6 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.0'
 
+# Dot env gem to protect api keys
+gem 'dotenv-rails', groups: [:development, :test]
 # Simple form gem
 gem 'simple_form'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
